@@ -120,7 +120,7 @@ footer a
 
 #page-loading-spinner:not(.ready)
 {
-	background			: url('/apple-touch-icon.png') no-repeat;
+	background			: url('/img/apple-touch-icon.png') no-repeat;
 	opacity				: 0.80;
 	position			: fixed;
 	top					: 47.5%;
@@ -311,10 +311,18 @@ footer a
 
 
 
-#stream, #streamPlayer
+#stream, #streamPlayer, #videoCover
 {
-	position			: fixed;
-	right				: -100%;
+	position			: absolute;
+	margin-top			: 30px;
+	margin-left			: 20%;
+	padding-bottom		: 10px;
+}
+#videoCover
+{
+	width				: 300px;
+	height				: 200px;
+	z-index				: 900;
 }
 
 

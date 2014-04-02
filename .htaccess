@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} [\?]+
+RewriteRule ^/?$ /\%3F%{QUERY_STRING} [QSA]
+
+RewriteCond %{REQUEST_URI} ^(.+)\.html$
+RewriteRule ^(.+)\.html /$1 [L,R=301]
